@@ -1,0 +1,21 @@
+<html>
+<script>
+var newWindow;
+
+function openWindow() {
+  newWindow = window.open("", "myWindow", "width=200,height=100");
+  newWindow.document.write('<a href="javascript:window.close();" class="video-close">Close this window</a>');
+}
+
+function closeWindow() {
+  newWindow.close();
+}
+</script>
+<h3 style="color:brown"> Close Window Example </h3>
+<body>
+<button onclick="openWindow()">Open New Window</button>
+<br><br>
+<button onclick="closeWindow()">Close New Window </button>
+
+</body>
+</html>
